@@ -3,7 +3,8 @@
     <div class="content about">
         <div class="intro">
             <div class="intro-image">
-                <img src="https://cdn.seppedekeyser.be/img/pic_face.jpg" />
+                {{ $image := resources.GetMatch "pic_face.jpg" }}
+                <img src="{{ $image.RelPermalink }}" />
             </div>
             <div class="intro-content">
                 <h2>Hi there!</h2>

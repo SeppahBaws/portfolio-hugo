@@ -1,12 +1,15 @@
+{{ $firaSans := (resources.Get "css/FiraSans.css") | resources.Minify }}
+{{ $jetBrainsMono := (resources.Get "css/JetBrainsMono.css") | resources.Minify }}
+{{ $style := (resources.Get "css/style.css") | resources.Minify }}
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="/FiraSans/FiraSans.css">
-    <link rel="stylesheet" src="/JetBrainsMono/JetBrainsMono.css">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="{{ $firaSans.RelPermalink }}">
+    <link rel="stylesheet" href="{{ $jetBrainsMono.RelPermalink }}">
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
 
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <link rel="icon" type="image/webp" href="/favicon.webp" />
+    <link rel="shortcut icon" href="/favicon.png" type="image/png">
 
     {{- partial "metadata.html" . -}}
 
