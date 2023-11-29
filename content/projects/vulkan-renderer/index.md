@@ -153,15 +153,15 @@ void Scene::Draw()
 
 Here you can see the shader hot-reloading system in action:
 
-{{<pagevid src="vid/Pelican_ShaderReload.mp4">}}
+{{<youtube eLQLpctFaak>}}
 
 Here is the Dear ImGui debug UI doing its job:
 
-{{<pagevid src="vid/Pelican_ImGui.mp4">}}
+{{<youtube lDNhOxIi_cI>}}
 
 And finally, a sneak preview of the PBR renderer (currently, only simple lighting is implemented)
 
-{{<pagevid src="vid/Pelican_PBR.mp4">}}
+{{<youtube 0UByh4GiR7E>}}
 
 
 used libraries:
