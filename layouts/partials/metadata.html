@@ -2,7 +2,7 @@
 
 {{ $ogType := "website" }}
 {{ $twitterType := "summary" }}
-{{ $img := "https://cdn.seppedekeyser.be/img/PortfolioBanner.png" }}
+{{ $img := printf "%s" "/PortfolioBanner.png" | printf "%s%s" .Site.BaseURL | printf "%s" }}
 {{ $description := .Site.Params.description }}
 
 {{ if $isArticle }}
@@ -26,7 +26,7 @@
 <meta property="og:description" content="{{ $description }}" />
 <meta property="og:type" content="{{ $ogType }}" />
 <meta property="og:url" content="{{ .Permalink }}" />
-<meta property="og:image" content="{{ $img}}" />
+<meta property="og:image" content="{{ $img }}" />
 
 <!-- Twitter card -->
 <meta name="twitter:title" content="{{ .Title }}" />

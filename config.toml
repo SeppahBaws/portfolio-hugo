@@ -2,6 +2,7 @@ baseURL = "https://seppedekeyser.be"
 languageCode = "en-us"
 title = "Seppe Dekeyser"
 copyright = "©️ 2022 - 2023 | Seppe Dekeyser"
+staticDir = ["static"]
 
 [params]
   description = "Aspiring engine and graphics programmer"
@@ -25,5 +26,5 @@ copyright = "©️ 2022 - 2023 | Seppe Dekeyser"
     weight = 3
   [[menu.main]]
     name = "Resume"
-    url = "https://cdn.seppedekeyser.be/SeppeDekeyserResume.pdf"
+    url = "/resume.pdf"
     weight = 4
