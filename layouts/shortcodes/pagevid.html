@@ -1,0 +1,5 @@
+{{ $src := .Get "src" }}
+{{ $video := .Page.Resources.GetMatch $src }}
+
+<video width="100%" controls muted src="{{ $video.RelPermalink }}">
+</video>

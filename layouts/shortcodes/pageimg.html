@@ -1,0 +1,10 @@
+{{ $src := .Get "src" }}
+{{ $alt := .Get "alt" }}
+{{ $image := .Page.Resources.GetMatch $src }}
+
+<a href="{{ $image.RelPermalink }}">
+    <img src="{{ $image.RelPermalink }}" alt="{{ $alt }}" />
+    {{ with .Get "showDescription"}}
+        <p style="margin-top: 0;">{{ $alt }}</p>
+    {{ end }}
+</a>
