@@ -20,6 +20,10 @@
     background-color: var(--background);
 }
 
+html {
+    color-scheme: dark;
+}
+
 html,
 body {
     margin: 0;
