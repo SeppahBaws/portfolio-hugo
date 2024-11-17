@@ -10,7 +10,7 @@
             <div class="nav-item">
                 <a
                     href="{{ .URL }}"
-                    class="nav-link active"
+                    class="nav-link {{ if eq .URL page.Path }}active{{ end }}"
                     {{ if or (strings.HasPrefix .URL "http") (strings.HasPrefix .URL "https")}} rel="noreferrer" target="_blank" {{ end }}
                 >
                     {{ .Name }}

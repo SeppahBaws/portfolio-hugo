@@ -1,7 +1,7 @@
 baseURL = "https://seppedekeyser.be"
 languageCode = "en-us"
 title = "Seppe Dekeyser"
-copyright = "©️ 2022 - 2023 | Seppe Dekeyser"
+copyright = "©️ 2022 - 2024 | Seppe Dekeyser"
 staticDir = ["static"]
 
 [params]
